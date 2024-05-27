@@ -1,55 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2024-05-24T02:35:18.157Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0" etag="rcugEQZPhT0_wGLPGUeH" version="24.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-27T16:03:46.062Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0" etag="eVUT6GhXa3MEy8hwOkqw" version="24.4.7" type="github">
   <diagram name="Page-1" id="oflHCe_NO_T7PfGb3d7z">
-    <mxGraphModel dx="989" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/redis-plain-icon-512x436-c8xjr4u4.png;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="70.46" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-3" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Cache Aside&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220.23" y="60" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pyEFsa0UC58ZQDf_y6Xx-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="151" as="sourcePoint" />
-            <mxPoint x="460" y="151" as="targetPoint" />
+            <mxPoint x="740" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="238" y="310" />
+              <mxPoint x="740" y="310" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-8" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNRihpHPXaHQ-nkPa9WP-3">
-          <mxGeometry x="-0.0308" y="4" relative="1" as="geometry">
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-16" value="5. SET the data to redis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pyEFsa0UC58ZQDf_y6Xx-15">
+          <mxGeometry x="0.0607" y="-5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rNRihpHPXaHQ-nkPa9WP-1" target="rNRihpHPXaHQ-nkPa9WP-4">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:1023/1*du7p50wS_fIsaC_lR18qsg.png;" vertex="1" parent="1">
+          <mxGeometry x="30" y="190" width="277.24" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-10" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNRihpHPXaHQ-nkPa9WP-5">
-          <mxGeometry x="0.05" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://assets-global.website-files.com/628e6648a47e6727d5c69a2a/62f120f634f46f92d05298c6_MongoDB_Logo.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="70" y="560" width="250" height="67.29" as="geometry" />
+        </mxCell>
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="304.24" y="229" as="sourcePoint" />
+            <mxPoint x="650" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rNRihpHPXaHQ-nkPa9WP-1" target="rNRihpHPXaHQ-nkPa9WP-2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-8" value="1. Check redis for key" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-11" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNRihpHPXaHQ-nkPa9WP-7">
-          <mxGeometry x="-0.1" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-9" value="3. If data not present in redis, then check the db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="390" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.974;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="250" as="sourcePoint" />
+            <mxPoint x="300.0317600000001" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-1" value="Application" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="120" y="130" width="80" height="80" as="geometry" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-11" value="2. Return Data if present" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="246" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="rNRihpHPXaHQ-nkPa9WP-2" target="rNRihpHPXaHQ-nkPa9WP-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-9" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNRihpHPXaHQ-nkPa9WP-6">
-          <mxGeometry y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.592;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pyEFsa0UC58ZQDf_y6Xx-5" target="pyEFsa0UC58ZQDf_y6Xx-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="380" as="sourcePoint" />
+            <mxPoint x="450" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-2" value="Cache (Redis)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="460" y="130" width="80" height="80" as="geometry" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="300" as="sourcePoint" />
+            <mxPoint x="160" y="550" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-4" value="Database" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="120" y="290" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="rNRihpHPXaHQ-nkPa9WP-12" value="&lt;div align=&quot;left&quot;&gt;1. App asks data to cache&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;2. If cache is having the data it returns&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;3. If not, then app asks the db&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;4. App stores the data in cache for next cache hit &lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="155" width="260" height="105" as="geometry" />
+        <mxCell id="pyEFsa0UC58ZQDf_y6Xx-14" value="4. Returns the data from the DB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="420" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
