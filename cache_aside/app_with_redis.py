@@ -27,11 +27,9 @@ def create_todo(todo: Todo):
 def read_item(todo_id: str):
     from_cache = r.hgetall(todo_id)
     if from_cache:
-        print("cache hit")
         return from_cache
     todo = collection.find_one({"id": todo_id}, {'_id':0})
     r.hmset(todo_id, todo)
-    print("cache miss")
     if todo:
         return todo
     raise HTTPException(status_code=404, detail="Item not found")
