@@ -5,7 +5,7 @@ import { createClient } from "redis";
 const redisConnectionUrl = "redis://127.0.0.1:6379";
 const pythonFilePath = "./read_script.py";
 
-const runWriteBehindRecipe = async () => {
+const runReadThroughRecipe = async () => {
     const requirements = ["pymongo==3.12.0"];
     const readThroughCode = fs.readFileSync(pythonFilePath).toString();
     const client = createClient({ url: redisConnectionUrl });
@@ -22,4 +22,4 @@ const runWriteBehindRecipe = async () => {
     }
     process.exit();
 };
-runWriteBehindRecipe();
+runReadThroughRecipe();

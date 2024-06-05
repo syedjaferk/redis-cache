@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from pymongo.mongo_client import MongoClient
-from gearsclient import GearsRemoteBuilder as GearsBuilder, execute
 import redis
 
 
@@ -26,9 +25,7 @@ def create_todo(todo: Todo):
 
 @app.get("/todos/{todo_id}", response_model=Todo)
 def read_item(todo_id: str):
-    res = GearsBuilder(reader='KeysOnlyReader', r=r).map(lambda x: execute('hgetall', x, todo_id)).run()
-    print(res)
-    # result = r.execute_command('RG.TRIGGER', 'read_through_cache', todo_id)
-    # if result:
-    #     return result[0]
+    res = r.json().get(todo_id)
+    if res:
+        return res
     raise HTTPException(status_code=404, detail="Item not found")

@@ -12,12 +12,13 @@ def find_data(key):
 
 def read_cache(event):
     key = event['key']
-    data = execute('GET', key)
+    data = execute('JSON.GET', key)
     if data:
         return data
     data = find_data(key)
-    execute('SET', key, data['name'])
-    override_reply(data['name'])
-    return data['name']
+    json_str = json.dumps(data)
+    execute('JSON.SET', key, '.', json_str)
+    override_reply(json_str)
+    return json_str
 
-GB('KeysReader').map(read_cache).register(commands=['get'], mode='sync')
+GB('KeysReader').map(read_cache).register(commands=['JSON.GET'], mode='sync')
