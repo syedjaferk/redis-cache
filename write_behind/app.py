@@ -8,4 +8,4 @@ db = 'test'
 
 user_connector = MongoConnector(connection=connection, db=db, tableName='users', pk='userId')
 
-RGJSONWriteBehind(GB, keysPrefix='users', connector=user_connector, name='WatchHistoryWriteBehind1', version='99.99.99')
+RGJSONWriteBehind(GB, keysPrefix='users:4', connector=user_connector, name='WatchHistoryWriteBehind1', version='99.99.99')

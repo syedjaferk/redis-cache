@@ -3,7 +3,7 @@ import { createClient } from "redis";
 
 
 const redisConnectionUrl = "redis://127.0.0.1:6379";
-const pythonFilePath = "./app.py";
+const pythonFilePath = "./content.py";
 
 const writeThroughCodeRecipe = async () => {
     const requirements = ["rgsync", "pymongo==3.12.0"];

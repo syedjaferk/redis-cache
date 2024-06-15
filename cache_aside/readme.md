@@ -27,7 +27,7 @@ docker run -p 6379:6379 --rm redislabs/redismod:latest
 2. Start MongoDb
 
 ```
-docker run --name mongo_container --rm mongo
+docker run -p 27017:27017 --name mongo_container --rm mongo
 ```
 We have a backup of 2 Lakhs data. To Restore data to mongo db, 
 

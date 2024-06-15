@@ -13,4 +13,9 @@ user = {
     }
 }
 
-JSON(r).set("users:4", Path.root_path(), user)
+import json
+
+detail = {'movieId':"123", "title":"KGF 2"}
+
+
+JSON(r).set("MovieEntity:123", ".", json.dumps(detail))
