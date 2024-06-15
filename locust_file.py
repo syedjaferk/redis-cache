@@ -11,7 +11,7 @@ todo_ids = range(1, 200000)
 
 class LocustClient(FastHttpUser):
     wait_time = constant(0)
-    host = "http://localhost:8000/todos"
+    host = "http://localhost:8001/todos"
 
 
     def __init__(self, environment):

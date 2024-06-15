@@ -27,5 +27,6 @@ def create_todo(todo: Todo):
 def read_item(todo_id: str):
     res = r.json().get(todo_id)
     if res:
+        print(res)
         return res
     raise HTTPException(status_code=404, detail="Item not found")
