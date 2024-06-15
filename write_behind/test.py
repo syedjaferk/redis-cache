@@ -5,12 +5,9 @@ from redis.commands.json import JSON
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 user = {
-    "user":{
-        "name": "Sarah Zamir",
-        "email": "sarah.zamir@example.com",
-        "age": 30,
-        "city": "Paris"
-    }
+    "id":"test_id",
+    "name":"some todo",
+    "description": "some description"
 }
 
-JSON(r).set("users:4", Path.root_path(), user)
+JSON(r).set("todos:test_id", Path.root_path(), user)
